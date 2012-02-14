@@ -1,0 +1,7 @@
+<h1>Active Bots</h1>
+<a href="{% url new_bot %}">New Bot</a>
+<ul>
+{% for bot in bot_list %}
+    <li><a href="{{ bot.get_absolute_url }}">{{bot.username}}</a></li>
+{% endfor %}
+</ul>

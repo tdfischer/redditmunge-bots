@@ -1,0 +1,4 @@
+<h1>Details for {{bot.username}}</h1>
+<a href="{{ bot.get_edit_url }}">Edit</a>
+{% load markup %}
+{{bot.description|markdown:"safe"}}
